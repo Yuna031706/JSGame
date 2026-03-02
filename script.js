@@ -371,7 +371,7 @@ function startSubGame() {
       gameOver();
       // changeMainGame();
     }
-  }, 8500);
+  }, 9000);
 }
 
 //サブ停止
@@ -464,3 +464,4 @@ function gameReset() {
   count = 26;
   score_text.textContent = count;
 }
+
