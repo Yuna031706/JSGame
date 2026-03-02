@@ -1,0 +1,112 @@
+html,
+body {
+  width: 1500px;
+  height: 850px;
+  margin: auto;
+}
+html {
+  background-color: #ffffff;
+}
+body {
+  position: relative;
+  background-color: #bafcee;
+  display: flex;
+  justify-content: center;
+}
+* {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+h1 {
+  font-weight: 700;
+  font-style: normal;
+}
+h1,
+button {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  top: 30%;
+  color: #fff;
+  border-top: 4px solid #48ecd1;
+  border-right: 4px solid #0a5f58;
+  border-bottom: 4px solid #0f7474;
+  border-left: 4px solid #8cf9f0;
+  border-radius: 0;
+  background: #11a38f;
+  font-size: large;
+}
+
+button:active {
+  color: #fff;
+  border-top: 4px solid #0f745b;
+  border-right: 4px solid #8cf9de;
+  border-bottom: 4px solid #48ecc4;
+  border-left: 4px solid #0a5f4a;
+}
+
+.title {
+  top: 5%;
+}
+h2 {
+  font-weight: 400;
+  font-style: normal;
+
+  position: absolute;
+  top: 8%;
+  left: 44.3%;
+}
+.game {
+  padding-top: 150px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+.card {
+  background-image: url(images/back/teal.png);
+
+  width: 100px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.countdown {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+
+/*数字ミニゲーム-----------------------------------------------------------*/
+
+.numArea {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.num {
+  position: absolute;
+  width: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.num:hover {
+  opacity: 0.4;
+}
+.subGame h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  z-index: 10;
+}
